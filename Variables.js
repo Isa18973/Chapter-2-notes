@@ -81,6 +81,6 @@ const pi = 3.14;
 const userName = "myUser123";
 
 // constants cannot change values
-Var old = 123;
+var old = 123;
 //var is the old way to create variables
 //dont use it!!
