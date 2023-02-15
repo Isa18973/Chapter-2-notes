@@ -1,32 +1,42 @@
 const readline = require('readline-sync');
 
-let answer = readline.question("What day is it?\n Your answer:");
-console.log(answer);
+let answer = readline.question("Do you want to hear a joke\n Yes or NO:");
+if (answer == "Yes") {
+    let answer = readline.question("What starts with E, ends with E, and has only 1 letter in it? ");
+    if(answer == "what"){
+    console.log (`An Envelope`);
+}}
 
-let username = readline.question("Enter username:");
-let password = readline.question("Enter password:");
-if(password == "abc123"){
-    console.log('Welcome ${username}');
-}else{
-    console.log("invalid");
+else {
+    console.log ('ok');
 }
 
-let currentPrice = readline.question("Enter current price:");
-let originalPrice = readline.question("Enter original price:");
-let diff = originalPrice-currentPrice;
-let discount = (diff/originalPrice). toFixed(2);
-console.log ('discount: ${discount}');
+let base = readline.question ("Type in any number");
+if (base % 2== 0){
+        console.log(` ${base} is divisible by 2`);
+}if (base % 3 == 0) {
+        console.log(`${base} is divisible by 3`);
+}if (base % 4 == 0) {
+             console.log(`${base} is divisible by 4`);
+}if (base % 5 == 0) {
+                console.log(`${base} is divisible by 5`);
+}if (base % 6 == 0) {
+    console.log(`${base} is divisible by 6`);
+} else {
+        console.log(`${base} is not divisible by 2, 3, 4, 5, 6`);
 
-//Exponents
-let base = Number(readline.question("Enter the base"));
-let exp = Number(readline.question("Enter the exponent"));
-let answer2 = base ** exp
-console.log('${base} to the power of ${exp} = ${answer2}');
+    }
 
-// Rounding
-// console.log(5.7);
-// console.log(Math.round(5.7));
-// console.log(5.3);
-// console.log(Math.round(5.3));
-// console.log(-5.3);
-// console.log(Math.round(-5.3));
+
+//
+let secret = Number(readline.question("Give me a number 1-100"));
+if (secret < 20)(
+    console.log ("Too Low");
+)if (secret > 20)(
+    console.log (" Too high");
+)if (secret == 20)(
+    console.log("You Won");
+)
+
+//
+
