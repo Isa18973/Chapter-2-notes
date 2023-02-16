@@ -1,13 +1,32 @@
 const readLine = require('readline-sync');
-let num1 = Number(readLine.question("Enter first number: "));
-let num2 = Number(readLine.question("Enter first number: "));
-let sum = num1 + num2;
-console.log(`${num1} + ${num2} = ${sum}`);
-
-//2
-const readline = require('readline-sync');
-let num3 = readline.question("Enter a number");
-let num4 = readline.question("Enter a number");
-let sum = num3 - num4;
-console.log(`${num3} - ${num4} = ${sum}`);
+//1
+let x = Number(readLine.question("Give me a number:"));
+ let y = Number(readLine.question("Give me another number:"));
+let sum = (`${x+y}`);
+ console.log(sum);
+// 2
+let a = Number(readLine.question("Give me a number:"));
+let b = Number(readLine.question("Give me another number:"));
+let difference = (`${a-b}`);
+console.log(difference);
 //3
+let c = Number(readLine.question("Give me a number:"));
+let d = Number(readLine.question("Give me another number:"));
+let product = (`${c*d}`);
+console.log(product);
+//4
+let e = Number(readLine.question("Give me a number:"));
+let f = Number(readLine.question("Give me another number:"));
+let quotient = (`${e/f}`);
+console.log(quotient);
+//5
+let g = Number(readLine.question("Give me a number:"))
+;let h = Number(readLine.question("Give me another number:"));
+let remainder = (`${g/h}`);
+console.log(remainder);
+
+//6
+let name = (readLine.question("Enter name:"));
+let last = (readLine.question("Enter last name:"));
+let dad = (`greetings ${last} ${name}`);
+console.log (dad);
