@@ -24,8 +24,4 @@ const readLine = require('readline-sync');
    // console.log(x);
    // x++;
 //}
-let x = 0;
-while (x<26){
-    console.log(x);
-    x+2;
-}
+
